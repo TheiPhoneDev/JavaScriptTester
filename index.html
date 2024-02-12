@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+     <h1 style="font-family: Arial, Helvetica, sans-serif;">JavaScript Button Tester</h1>
+    <section style="display: grid;justify-content: center;align-items: center;gap: 10px;">
+      <button onclick="testButton1()">Test console log Iterazione con While da 1 a 100</button>
+      <button onclick="testButton2()">Test console log Iterazione con ciclo for da 1 a 100</button>
+      <button onclick="testButton3()">Test console log di stampa errore,warning</button>
+
+      <p style="font-family: Arial, Helvetica, sans-serif;">
+        Apri i DevTools del tuo browser per testare le funzioni JavaScript azionate
+        dai bottoni.
+      </p>
+      
+    </section>
+  </main>
+
+
+  <!-- script javascript -->
+  <script>
+    function testButton1() {
+      let i=1;
+
+      while(i<=100) {
+        console.log(i);
+        i++;
+      }
+    }
+
+    function testButton2() {
+      for(let i=1;i<=100;i++) {
+        console.log(i);
+      }
+    }
+
+    function testButton3() {
+      let nome = "Pietro";
+      let cognome = "Gambatesa";
+      let stringToPrint = nome+" "+cognome;
+      console.log(stringToPrint);
+      console.error(stringToPrint);
+      console.warn(stringToPrint);
+    }
+    
+  </script>
+
+
+  
+</body>
+</html>
